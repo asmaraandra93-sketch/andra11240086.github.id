@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Profil - Andra Asmara</title>
+  <style>
+    /* Reset sederhana */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg, #f3f7ff 0%, #ffffff 100%);
+      color: #0b1220;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(9,25,50,0.08);
+      width: 100%;
+      max-width: 720px;
+      padding: 28px;
+      text-align: center;
+    }
+
+    .avatar {
+      width: 110px;
+      height: 110px;
+      margin: 0 auto 18px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-weight: 700;
+      font-size: 36px;
+      color: white;
+      background: linear-gradient(135deg,#3b82f6,#06b6d4);
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 6px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #475569;
+      margin-bottom: 18px;
+    }
+
+    .info {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+
+    .chip {
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: #eef2ff;
+      color: #3730a3;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 13px;
+      color: #94a3b8;
+    }
+
+    /* Responsive kecil */
+    @media (max-width:420px) {
+      .card { padding: 20px; }
+      .avatar { width: 88px; height: 88px; font-size: 30px; }
+      h1 { font-size: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main" aria-labelledby="namaTitle">
+    <div class="avatar" aria-hidden="true">AA</div>
+
+    <h1 id="namaTitle">Andra Asmara</h1>
+    <p>NIM: <strong>11240086</strong></p>
+
+    <div class="info" aria-hidden="false">
+      <div class="chip">Program Studi: Teknik Informatika</div>
+      <div class="chip">Status: Mahasiswa</div>
+    </div>
+
+    <footer>
+      Halaman sederhana menampilkan nama dan NIM. (Simpan sebagai <code>index.html</code> lalu buka di browser.)
+    </footer>
+  </main>
+</body>
+</html>
